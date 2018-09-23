@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CatalogoDetalle"
+    tools:showIn="@layout/activity_catalogo_detalle">
+
+    <LinearLayout
+        android:id="@+id/layout_catalogo_edicion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Refaccionaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView_Producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/textView_Modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/darker_gray"
+            android:textColorLink="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView_Marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="#33645b" />
+
+        <TextView
+            android:id="@+id/textView_Precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:paddingTop="10dp"
+            android:scrollbars="vertical"
+            android:text="TextView"
+            android:textColor="#33645b" />
+
+        <ImageView
+            android:id="@+id/imageView_Imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            app:srcCompat="@android:drawable/btn_dialog" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
