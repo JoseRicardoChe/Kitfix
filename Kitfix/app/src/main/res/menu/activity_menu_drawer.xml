@@ -5,33 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/hazlo"
-            android:icon="@drawable/hazlotumismo"
-            android:title="Hazlo tu mismot" />
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
         <item
-            android:id="@+id/nav_concoce"
-            android:icon="@drawable/coche"
-            android:title="Conocce tu auto" />
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
         <item
-            android:id="@+id/nav_verde"
-            android:icon="@drawable/kitfixverde"
-            android:title="KitFix verde" />
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
         <item
-            android:id="@+id/nav_cuenta"
+            android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tu cuenta" />
+            android:title="Tools" />
     </group>
 
-    <item android:title="Te podemos ayudar">
+    <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_soporte"
-                android:icon="@drawable/pregunta"
-                android:title="Soporte técnico" />
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
             <item
-                android:id="@+id/nav_informacion"
-                android:icon="@drawable/informacion"
-                android:title="Información KitFix" />
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
         </menu>
     </item>
 
