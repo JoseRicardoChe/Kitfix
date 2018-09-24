@@ -1,5 +1,6 @@
 package com.example.jose_.kitfix;
 
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,13 +8,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
-
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -26,7 +29,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CatalogoActivity extends AppCompatActivity {
-    String urlConsultar="http://187.252.154.103/aplicacionesmoviles/serviciosweb/consultar_catalogo.php";
+
+
+
+String urlConsultar="http://187.252.154.103/aplicacionesmoviles/serviciosweb/consultar_catalogo.php";
     ProgressDialog pdEsperar;
     //Nombre de campo del JSON
     //los nombres pueden ser oguales o no
@@ -50,7 +56,6 @@ public class CatalogoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_catalogo);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         lvLista=(ListView)findViewById(R.id.listViewCatalogo);
         Catalogo_List= new ArrayList<HashMap<String, String>>();
 
@@ -66,6 +71,8 @@ public class CatalogoActivity extends AppCompatActivity {
 
         llenarLista();
     }
+
+
 
     public void llenarLista(){
         //inicializar el progressdialog
@@ -137,7 +144,7 @@ public class CatalogoActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            //Preparar la sigue¿iente pantalla detalle
+            //Preparar la siguiente pantalla detalle
             Intent pantallaDetalle=new Intent(CatalogoActivity.this,CatalogoDetalle.class);
 
             //Mandarle un parametro desde una pantalla a la otra
@@ -148,5 +155,9 @@ public class CatalogoActivity extends AppCompatActivity {
 
         }
     }
+
+
+
+
 
 }

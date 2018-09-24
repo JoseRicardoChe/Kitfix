@@ -15,17 +15,13 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="com.example.usuario.antutgooglemaps.permission.MAPS_RECEIVE" />    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SplashActivity">
@@ -40,7 +36,7 @@
             android:label="@string/title_activity_login" />
         <activity
             android:name=".MenuActivity"
-            android:label="@string/app_name"
+            android:label="KitFix"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="com.example.jose_.kitfix.MenuActivity" />
@@ -71,7 +67,8 @@
 
         <activity
             android:name=".UbicacionActivity"
-            android:label="@string/title_activity_ubicacion"></activity>
+            android:label="@string/title_activity_ubicacion" />
+        <activity android:name=".verdeKitfix"></activity>
     </application>
 
 </manifest>
